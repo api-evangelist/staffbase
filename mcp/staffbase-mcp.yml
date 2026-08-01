@@ -1,0 +1,42 @@
+generated: '2026-07-21'
+method: derived
+status: candidate
+source: https://developers.staffbase.com/api/
+notes: >-
+  No official hosted/remote MCP server for the Staffbase Platform API was found.
+  This is a candidate tool surface derived from the API families listed on the
+  Staffbase developer portal (one tool group per documented API). Not authoritative.
+server:
+  name: staffbase
+  transport: http
+tools:
+  - name: list_users
+    description: List and manage users
+    source: developers.staffbase.com/api/api-user
+  - name: manage_groups
+    description: Manage groups / audiences
+    source: developers.staffbase.com/api/api-groups
+  - name: publish_news
+    description: Create and manage news posts
+    source: developers.staffbase.com/api/api-news
+  - name: manage_pages
+    description: Manage pages
+    source: developers.staffbase.com/api/api-pages
+  - name: get_analytics
+    description: Retrieve analytics
+    source: developers.staffbase.com/api/api-analytics
+  - name: read_audit_log
+    description: Read the audit log
+    source: developers.staffbase.com/api/api-audit-log
+  - name: manage_campaigns
+    description: Manage email campaigns
+    source: developers.staffbase.com/api/api-campaigns
+  - name: manage_media
+    description: Upload and manage media
+    source: developers.staffbase.com/api/api-media
+  - name: send_notifications
+    description: Send notifications
+    source: developers.staffbase.com/api/api-notifications
+  - name: manage_spaces
+    description: Manage spaces
+    source: developers.staffbase.com/api/api-spaces

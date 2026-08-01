@@ -1,0 +1,22 @@
+generated: '2026-07-21'
+method: searched
+source: live probe of https://app.staffbase.com/api
+format: custom-json-envelope
+notes: >-
+  The Staffbase Platform API returns a custom JSON error envelope (not RFC 9457
+  application/problem+json). Envelope fields observed on a live 401 response.
+envelope:
+  fields:
+    - {name: traceId, description: Request correlation id}
+    - {name: type, description: Exception class name (e.g. NotLoggedInException)}
+    - {name: ref, description: Stable machine-readable error reference (e.g. ERROR_LOGIN_REQUIRED)}
+    - {name: statusCode, description: HTTP status code}
+    - {name: message, description: Human-readable message}
+    - {name: identifier, description: Numeric error identifier}
+problems:
+  - status: 401
+    type: NotLoggedInException
+    ref: ERROR_LOGIN_REQUIRED
+    identifier: 40102
+    title: This end point requires authentication.
+    source: "GET https://app.staffbase.com/api/users"

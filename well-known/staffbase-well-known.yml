@@ -1,0 +1,29 @@
+generated: '2026-07-21'
+method: searched
+source: live probes of /.well-known/ on Staffbase hosts
+notes: >-
+  A real RFC 9116 security.txt is published at staffbase.com. On the API host
+  app.staffbase.com the /.well-known/openid-configuration, /oauth-authorization-server
+  and /api-catalog paths all return HTTP 200 but serve the single-page-app HTML
+  shell (SPA catch-all route), not real discovery documents, so they are recorded
+  as not-present rather than saved.
+hosts:
+  - host: https://staffbase.com
+    documents:
+      - path: /.well-known/security.txt
+        status: 200
+        file: staffbase-security.txt
+  - host: https://app.staffbase.com
+    documents:
+      - path: /.well-known/openid-configuration
+        status: 200
+        result: spa-shell-not-json
+      - path: /.well-known/oauth-authorization-server
+        status: 200
+        result: spa-shell-not-json
+      - path: /.well-known/api-catalog
+        status: 200
+        result: spa-shell-not-json
+      - path: /.well-known/security.txt
+        status: 200
+        result: spa-shell-not-txt

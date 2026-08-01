@@ -1,0 +1,15 @@
+generated: '2026-07-21'
+method: searched
+source: https://developers.staffbase.com/ + status.staffbase.com
+versioning:
+  scheme: unversioned-path
+  detail: Platform API under https://app.staffbase.com/api
+changelog:
+  url: https://developers.staffbase.com/changelog/
+status_page: https://status.staffbase.com
+release_history: https://support.staffbase.com/hc/en-us/categories/360000424152-Release-History
+deprecation:
+  policy_url: null
+  detail: No formal public deprecation/Sunset-header policy located
+sla:
+  url: null

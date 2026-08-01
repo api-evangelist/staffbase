@@ -1,0 +1,28 @@
+generated: '2026-07-21'
+method: searched
+source: https://developers.staffbase.com/api/ + live API probe
+notes: >-
+  Cross-cutting request/response semantics for the Staffbase Platform API, captured
+  from the developer portal and a live probe. No downloadable OpenAPI is published;
+  idempotency-key support is not documented, so no Idempotency contract is asserted.
+authentication:
+  style: http-basic
+  detail: HTTP Basic auth carrying a per-installation API token
+  ref: authentication/staffbase-authentication.yml
+base_url: https://app.staffbase.com/api
+error_envelope:
+  format: custom-json
+  fields: [traceId, type, ref, statusCode, message, identifier]
+  ref: errors/staffbase-problem-types.yml
+request_tracing:
+  correlation_field: traceId
+  detail: Responses carry a traceId for support correlation
+idempotency:
+  supported: unknown
+  detail: No idempotency-key header is documented on the developer portal
+pagination:
+  style: unknown
+  detail: Not documented on the portal in machine-readable form
+versioning:
+  scheme: unversioned-path
+  detail: API paths sit under /api without an explicit version segment

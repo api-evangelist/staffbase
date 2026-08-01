@@ -1,0 +1,20 @@
+generated: '2026-07-21'
+method: searched
+source: https://staffbase.com/en/security/
+url: https://trust.staffbase.com/
+notes: >-
+  Staffbase publishes a Trust Center at trust.staffbase.com (returns 403 to
+  automated fetches / gated) and documents its certifications on the security page.
+certifications:
+  - ISO 27001
+  - SOC 2
+  - GDPR
+  - HIPAA
+  - CCPA
+programs:
+  - name: Bug bounty
+    platform: HackerOne
+    url: https://staffbase.com/security/bug-bounty
+evidence:
+  - source: https://staffbase.com/en/security/
+    keywords: [iso 27001, soc 2, gdpr, hipaa, trust center, hackerone]

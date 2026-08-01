@@ -1,0 +1,33 @@
+# Staffbase
+
+> Staffbase is an AI-native employee experience and internal-communications platform — intranet, branded employee mobile app, email/newsletters, and an AI knowledge assistant — used by 1,500+ enterprises to reach frontline and distributed workforces. The Staffbase Platform API (HTTP Basic auth with an API token, base https://app.staffbase.com/api) covers users, groups, news, pages, media, notifications, spaces, campaigns, analytics and more; the Plugins/Custom-Widget SDKs embed apps and widgets inside the Staffbase experience.
+
+## APIs
+- [Staffbase Platform API](https://developers.staffbase.com/api/): REST API base https://app.staffbase.com/api
+
+## Docs
+- [Developer Portal](https://developers.staffbase.com/)
+- [API Reference](https://developers.staffbase.com/api/)
+- [How-To Guides](https://developers.staffbase.com/guides/)
+- [Frameworks](https://developers.staffbase.com/frameworks/)
+- [Tutorials](https://developers.staffbase.com/tutorials/)
+- [Changelog](https://developers.staffbase.com/changelog/)
+- [Developer Blog](https://developers.staffbase.com/blog/)
+
+## SDKs
+- [Plugins client SDK (JavaScript, npm)](https://www.npmjs.com/package/@staffbase/plugins-client-sdk)
+- [Plugins SDK (PHP, Packagist)](https://packagist.org/packages/staffbase/plugins-sdk-php)
+- [Plugins SDK (Java, Maven Central)](https://search.maven.org/artifact/com.staffbase/plugins-sdk-java)
+- [GitHub organization](https://github.com/Staffbase)
+
+## Operations
+- [Status](https://status.staffbase.com)
+- [Support / Help Center](https://support.staffbase.com/hc/en-us)
+- [Security](https://staffbase.com/en/security/)
+- [Trust Center](https://trust.staffbase.com/)
+- [Bug Bounty (HackerOne)](https://staffbase.com/security/bug-bounty)
+
+## Company
+- [Marketplace](https://staffbase.com/marketplace)
+- [Pricing](https://staffbase.com/pricing)
+- [Blog](https://staffbase.com/blog/)

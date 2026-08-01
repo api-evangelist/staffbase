@@ -1,0 +1,51 @@
+generated: '2026-07-21'
+method: searched
+source: >-
+  github.com/Staffbase org + npm/Packagist/Maven Central registry lookups
+notes: >-
+  Staffbase's public first-party libraries are the Plugins/Custom-Widget SDKs used
+  to build embedded apps and widgets inside the Staffbase Employee App and Intranet.
+  Each is verified published on its registry. Server-side REST clients for the
+  Staffbase Platform API are not published by Staffbase.
+packages:
+  - language: javascript
+    registry: npm
+    name: "@staffbase/plugins-client-sdk"
+    url: https://www.npmjs.com/package/@staffbase/plugins-client-sdk
+    repo: https://github.com/Staffbase/plugins-client-sdk
+    install: npm install @staffbase/plugins-client-sdk
+    version: 3.1.3
+    official: true
+    description: Staffbase plugins client SDK for JavaScript
+  - language: php
+    registry: packagist
+    name: staffbase/plugins-sdk-php
+    url: https://packagist.org/packages/staffbase/plugins-sdk-php
+    repo: https://github.com/Staffbase/plugins-sdk-php
+    install: composer require staffbase/plugins-sdk-php
+    version: 3.0.1
+    official: true
+    description: Staffbase plugins SDK for PHP
+  - language: java
+    registry: maven
+    name: com.staffbase:plugins-sdk-java
+    url: https://search.maven.org/artifact/com.staffbase/plugins-sdk-java
+    repo: https://github.com/Staffbase/plugins-sdk-java
+    install: "implementation 'com.staffbase:plugins-sdk-java'"
+    official: true
+    description: Staffbase plugins SDK for Java
+  - language: javascript
+    registry: github
+    name: "@staffbase/plugins-sdk-nodejs"
+    url: https://github.com/Staffbase/plugins-sdk-nodejs
+    repo: https://github.com/Staffbase/plugins-sdk-nodejs
+    official: true
+    description: Staffbase plugins SDK for Node.js (source on GitHub)
+  - language: javascript
+    registry: npm
+    name: eslint-config-staffbase
+    url: https://www.npmjs.com/package/eslint-config-staffbase
+    repo: https://github.com/Staffbase/eslint-config-staffbase
+    install: npm install eslint-config-staffbase
+    official: true
+    description: Base ESLint config for Staffbase (developer tooling)

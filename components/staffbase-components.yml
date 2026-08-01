@@ -1,0 +1,26 @@
+generated: '2026-07-21'
+method: searched
+source: https://developers.staffbase.com/ + github.com/Staffbase
+notes: >-
+  Staffbase exposes a first-party embedded-UI surface: Plugins and Custom Widgets
+  that render inside the Staffbase Employee App and Intranet. These are client-side
+  embeddable components distinct from server-side API clients.
+families:
+  - name: Custom Widgets
+    kind: embeddable-web-component
+    detail: >-
+      Web-component based widgets embedded in Staffbase pages and news, built with
+      the plugins client SDK; example gallery in Staffbase/custom-widgets-examples.
+    docs: https://developers.staffbase.com/frameworks/
+    examples_repo: https://github.com/Staffbase/custom-widgets-examples
+    loader: "@staffbase/plugins-client-sdk"
+  - name: Plugins
+    kind: embedded-app
+    detail: >-
+      Full embedded applications hosted in the Staffbase app frame, authenticated
+      via the Plugins SDK (JWT-based SSO) available for JavaScript, Node.js, PHP and Java.
+    scaffolder: create-staffbase-plugin-nodejs
+    loaders:
+      - "@staffbase/plugins-client-sdk"
+      - staffbase/plugins-sdk-php
+      - com.staffbase:plugins-sdk-java

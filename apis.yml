@@ -1,7 +1,28 @@
 aid: staffbase
 name: Staffbase
-description: Staffbase is a company surfaced as a portfolio company of insight-partners and added to the
-  API Evangelist network as a stub for enrichment. This profile is a lead awaiting the enrichment pipeline.
+description: >-
+  Staffbase is an AI-native employee experience and internal-communications platform
+  that connects workforce communications across an intranet, a branded employee mobile
+  app, email and newsletters, and an AI-powered knowledge assistant. Used by more than
+  1,500 enterprises, it is built to reach hard-to-reach frontline, shift, and distributed
+  employees on every channel. Staffbase exposes a Platform API (HTTP Basic auth with an
+  API token, base https://app.staffbase.com/api) covering users, groups, news, pages,
+  media, notifications, spaces, campaigns, analytics, and audit logs, plus first-party
+  Plugins and Custom-Widget SDKs (JavaScript, Node.js, PHP, Java) for embedding apps and
+  widgets inside the Staffbase experience. Backed by Insight Partners.
+accessModel:
+  pricing: unknown
+  onboarding: self-serve
+  trial: false
+  try_now: false
+  public: false
+  label: Self-serve signup
+  confidence: medium
+  source:
+  - authentication
+  generated: '2026-07-22'
+  method: derived
+image: https://logo.clearbit.com/staffbase.com
 url: https://raw.githubusercontent.com/api-evangelist/staffbase/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -11,10 +32,40 @@ x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-21'
 tags:
 - Company
-apis: []
+- Employee Communications
+- Internal Communications
+- Employee Experience
+- Intranet
+- Employee App
+- Email
+- HR Tech
+- Enterprise
+apis:
+- name: Staffbase Platform API
+  description: >-
+    REST API for the Staffbase employee experience platform — manage users, groups,
+    news, pages, media, notifications, spaces, campaigns, analytics, and audit logs.
+    Authenticated with HTTP Basic auth carrying a per-installation API token.
+  humanURL: https://developers.staffbase.com/api/
+  baseURL: https://app.staffbase.com/api
+  tags:
+  - Employee Communications
+  - Internal Communications
+  - Intranet
+  properties:
+  - type: Documentation
+    url: https://developers.staffbase.com/api/
+  - type: APIReference
+    url: https://developers.staffbase.com/api/
+  - type: Authentication
+    url: authentication/staffbase-authentication.yml
+  - type: ErrorCatalog
+    url: errors/staffbase-problem-types.yml
+  - type: Conventions
+    url: conventions/staffbase-conventions.yml
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
@@ -23,3 +74,68 @@ maintainers:
 common:
 - type: Website
   url: https://staffbase.com/en/
+- type: DeveloperPortal
+  url: https://developers.staffbase.com/
+- type: Documentation
+  url: https://developers.staffbase.com/api/
+- type: APIReference
+  url: https://developers.staffbase.com/api/
+- type: GettingStarted
+  url: https://developers.staffbase.com/guides/
+- type: ChangeLog
+  url: https://developers.staffbase.com/changelog/
+- type: Blog
+  url: https://developers.staffbase.com/blog/
+- type: Support
+  url: https://support.staffbase.com/hc/en-us
+- type: StatusPage
+  url: https://status.staffbase.com
+- type: GitHubOrganization
+  url: https://github.com/Staffbase
+- type: Pricing
+  url: https://staffbase.com/pricing
+- type: Login
+  url: https://app.staffbase.com/
+- type: TermsOfService
+  url: https://staffbase.com/legal/terms-and-conditions
+- type: PrivacyPolicy
+  url: https://staffbase.com/legal/privacy-policy
+- type: Compliance
+  url: https://staffbase.com/en/security/
+- type: TrustCenter
+  url: https://trust.staffbase.com/
+- type: Security
+  url: https://staffbase.com/security/bug-bounty
+- type: Authentication
+  url: authentication/staffbase-authentication.yml
+- type: Packages
+  url: packages/staffbase-packages.yml
+- type: SDKs
+  url: packages/staffbase-packages.yml
+- type: Components
+  url: components/staffbase-components.yml
+- type: MCPServer
+  url: mcp/staffbase-mcp.yml
+- type: LLMsTxt
+  url: llms/staffbase-llms.txt
+- type: WellKnown
+  url: well-known/staffbase-well-known.yml
+- type: SecurityTxt
+  url: well-known/staffbase-security.txt
+- type: ErrorCatalog
+  url: errors/staffbase-problem-types.yml
+- type: Conventions
+  url: conventions/staffbase-conventions.yml
+- type: Lifecycle
+  url: lifecycle/staffbase-lifecycle.yml
+- type: Conformance
+  url: conformance/staffbase-conformance.yml
+- type: DomainSecurity
+  url: security/staffbase-domain-security.yml
+- type: VulnerabilityDisclosure
+  url: security/staffbase-vulnerability-disclosure.yml
+x-enrichment:
+  date: '2026-07-21'
+  status: enriched
+  artifacts_added: 14
+  pass: local-v1
