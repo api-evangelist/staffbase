@@ -10,6 +10,17 @@ description: >-
   media, notifications, spaces, campaigns, analytics, and audit logs, plus first-party
   Plugins and Custom-Widget SDKs (JavaScript, Node.js, PHP, Java) for embedding apps and
   widgets inside the Staffbase experience. Backed by Insight Partners.
+deliveryModel:
+  model: saas
+  open_source: false
+  commercial: true
+  callable_host: false
+  label: Hosted service · you call their endpoint
+  confidence: medium
+  source:
+  - pricing
+  generated: '2026-08-28'
+  method: derived
 accessModel:
   pricing: unknown
   onboarding: self-serve
